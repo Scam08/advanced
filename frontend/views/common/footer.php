@@ -15,8 +15,6 @@ if(Yii::$app->user->isGuest) {
                 <h4>Информация</h4>
                 <ul class="row">
                     <li class="col-lg-12 col-sm-12 col-xs-3"><a href="/pages/about" >О нас</a></li>
-                    <!--<li class="col-lg-12 col-sm-12 col-xs-3"><a href="agents.html" >Agents</a></li>
-                    <li class="col-lg-12 col-sm-12 col-xs-3"><a href="blog.html" >Blog</a></li> -->
                     <li class="col-lg-12 col-sm-12 col-xs-3"><a href="/pages/contact" >Связаться с нами</a></li>
                 </ul>
             </div>
