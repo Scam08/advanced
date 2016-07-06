@@ -16,13 +16,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'address')->textInput(['maxlength' => 255]) ?>
 
-    <?= $form->field($model, 'bedroom')->hiddenInput()->label(false)?>
 
-    <?= $form->field($model, 'livingroom')->hiddenInput()->label(false)?>
-
-    <?= $form->field($model, 'parking')->hiddenInput()->label(false)?>
-
-    <?= $form->field($model, 'kitchen')->hiddenInput()->label(false)?>
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6,'wrap'=>'soft | hard']) ?>
 
