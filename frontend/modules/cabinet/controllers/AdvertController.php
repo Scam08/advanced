@@ -21,16 +21,8 @@ use Imagine\Image\Box;
  */
 class AdvertController extends AuthController
 {
-    /**
-     * @inheritdoc
-     */
     public $layout = "inner";
 
-
-    /**
-     * Lists all Advert models.
-     * @return mixed
-     */
     public function actionIndex()
     {
         $searchModel = new AdvertSearch();
@@ -42,11 +34,6 @@ class AdvertController extends AuthController
         ]);
     }
 
-    /**
-     * Displays a single Advert model.
-     * @param integer $id
-     * @return mixed
-     */
     public function actionView($id)
     {
         return $this->render('view', [
