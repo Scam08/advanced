@@ -66,7 +66,7 @@
 
                         <div class="profile">
                                      <span class="glyphicon glyphicon-user"></span> Агент продаж
-                              <!--<img src="<?php //\common\components\UserComponent::getUserImage(Yii::$app->user->id) ?>" class="img-responsive img-circle" width="200" alt="User Image"/ >-->
+                              <img src="<?= \common\components\UserComponent::getUserImage($model->user->id) ?>" class="img-responsive img-circle" width="200" alt="User Image"/ >
                             <p><span>e-mail:</span><?=$model->user->email ?><br><span>Имя пользователя:</span><?=$model->user->username ?></p>
                         </div>
                     </div>
