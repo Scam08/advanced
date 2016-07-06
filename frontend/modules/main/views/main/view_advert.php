@@ -61,12 +61,12 @@
             <div class="col-lg-4">
                 <div class="col-lg-12  col-sm-6">
                     <div class="property-info">
-                        <p class="price">$ <?=$model->price ?></p>
+                        <p class="price"> <?=$model->price ?> руб</p>
                         <p class="area"><span class="glyphicon glyphicon-map-marker"></span> <?=$model->address ?></p>
 
                         <div class="profile">
                                      <span class="glyphicon glyphicon-user"></span> Агент продаж
-                              <img src="<?=\common\components\UserComponent::getUserImage(Yii::$app->user->id) ?>" class="img-responsive img-circle" width="200" alt="User Image"/ >
+                              <!--<img src="<?php //\common\components\UserComponent::getUserImage(Yii::$app->user->id) ?>" class="img-responsive img-circle" width="200" alt="User Image"/ >-->
                             <p><span>e-mail:</span><?=$model->user->email ?><br><span>Имя пользователя:</span><?=$model->user->username ?></p>
                         </div>
                     </div>
