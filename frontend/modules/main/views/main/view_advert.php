@@ -83,7 +83,8 @@
                         $form = \yii\bootstrap\ActiveForm::begin();
                         ?>
                         <?=$form->field($model_feedback,'email')->textInput(['value' => $current_user['email'], 'placeholder' => 'Кому_отправить@domain.com'])->label(false) ?>
-                        <?=$form->field($model_feedback,'name')->textInput(['value' => $current_user['username'], 'placeholder' => 'Username'])->label(false) ?>
+                        <label>Ваш логин</label>
+                        <?=$form->field($model_feedback,'name')->textInput(['value' => $current_user['username'], 'placeholder' => 'Логин'])->label(false) ?>
                         <?=$form->field($model_feedback,'text')->textarea(['rows' => 6, 'placeholder' => 'Хотите задать вопрос?'])->label(false) ?>
                         <button type="submit" class="btn btn-primary" name="Submit">Отправить сообщение</button>
 
