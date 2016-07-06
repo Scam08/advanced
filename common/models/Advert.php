@@ -58,7 +58,7 @@ class Advert extends \yii\db\ActiveRecord
     {
         return [
             [['price'], 'required','message' => 'Введите цену'],
-            [['price', 'fk_agent', 'bedroom', 'livingroom', 'parking', 'kitchen', 'hot', 'sold', 'type', 'recommend'], 'integer','message' => 'Значение должны быть целочисленными'],
+            [['price', 'fk_agent', 'hot', 'sold', 'type', 'recommend'], 'integer','message' => 'Значение должны быть целочисленными'],
             [['description'], 'string'],
             [['address'], 'string', 'max' => 255],
             [['location'], 'string', 'max' => 50],
@@ -80,10 +80,6 @@ class Advert extends \yii\db\ActiveRecord
             'price' => 'Цена',
             'address' => 'Адрес',
             'fk_agent' => 'Агент продаж',
-            'bedroom' => 'Bedroom',
-            'livingroom' => 'Livingroom',
-            'parking' => 'Parking',
-            'kitchen' => 'Kitchen',
             'general_image' => 'Главное изображение',
             'description' => 'Описание',
             'location' => 'Location',

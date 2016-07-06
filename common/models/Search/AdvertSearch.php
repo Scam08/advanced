@@ -18,7 +18,7 @@ class AdvertSearch extends Advert
     public function rules()
     {
         return [
-            [['idadvert', 'price', 'fk_agent', 'bedroom', 'livingroom', 'parking', 'kitchen', 'hot', 'sold', 'recommend', 'created_at', 'updated_at'], 'integer'],
+            [['idadvert', 'price', 'fk_agent','hot', 'sold', 'recommend', 'created_at', 'updated_at'], 'integer'],
             [['address', 'general_image', 'description', 'location', 'type'], 'safe'],
         ];
     }
@@ -62,10 +62,6 @@ class AdvertSearch extends Advert
             'idadvert' => $this->idadvert,
             'price' => $this->price,
             'fk_agent' => $this->fk_agent,
-            'bedroom' => $this->bedroom,
-            'livingroom' => $this->livingroom,
-            'parking' => $this->parking,
-            'kitchen' => $this->kitchen,
             'hot' => $this->hot,
             'sold' => $this->sold,
             'recommend' => $this->recommend,
